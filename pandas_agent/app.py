@@ -39,9 +39,9 @@ if uploaded_file:
                         "Only return Python code. Do not explain anything."
                     )
 
-                    # Send to OpenAI
+                    # Send to OpenAI - use gpt-3.5-turbo instead of gpt-4
                     response = client.chat.completions.create(
-                        model="model="gpt-3.5-turbo"",
+                        model="gpt-3.5-turbo",
                         messages=[
                             {"role": "system", "content": "You are a helpful Python and pandas assistant."},
                             {"role": "user", "content": gpt_prompt}
