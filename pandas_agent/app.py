@@ -41,7 +41,7 @@ if uploaded_file:
 
                     # Send to OpenAI
                     response = client.chat.completions.create(
-                        model="gpt-4",
+                        model="model="gpt-3.5-turbo"",
                         messages=[
                             {"role": "system", "content": "You are a helpful Python and pandas assistant."},
                             {"role": "user", "content": gpt_prompt}
